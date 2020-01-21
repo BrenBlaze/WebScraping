@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<head>
+<title> Some useful links </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<html>
+
+<body>
+<script>
+
+$(document).ready(function(){  
+
+    $("h1").css("color", "yellow");
+   
+
+    $("a").hover(
+        function() {
+            var x = $(this).text();
+            var y = $(this).attr('href');
+            
+            //alert(y);
+
+            $("#url").text(y);
+            $("#url").css("display", "block");
+
+        }, function() {
+            $("#url").empty();
+            ;
+        }
+    );
+
+
+}); 
+
+</script>
+
+<style>
+
+
+</style>
+
+<h1> Some useful links </h1>
+<p> Mouse over the links below to view the web address: </p>
+<ul>
+    <li> <a href = "http://www.google.com">Google</a>
+    <li> <a href = "http://www.easternct.edu">Eastern's Homepage</a></li>
+    <li> <a href = "https://easternct.blackboard.com/">Blackboard log-in</a></li>
+    <li> <a href = "http://www.piazza.com">Piazza</a></li>
+</ul>
+
+<div id = "url" style = "border: solid 1px red; display:none">
+
+</div>

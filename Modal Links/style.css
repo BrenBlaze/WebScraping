@@ -1,0 +1,40 @@
+
+
+/* The Modal (background) */
+.modalClass {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    right: 0;
+    top: 0;
+    width: 50%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color:red;
+}
+
+/* Modal Content/Box */
+.modalText {
+    background-color: yellow;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    word-wrap: break-word;
+    color:white;
+
+}
+
+/* The Close Button */
+.closex {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closex:hover,
+.closex:focus {
+    color: black;
+    cursor: pointer;
+}

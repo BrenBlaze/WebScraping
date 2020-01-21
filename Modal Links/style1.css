@@ -1,0 +1,12 @@
+.modalClass{
+
+    display:none;
+    position:fixed;
+    z-index:100;
+    right:0;
+    top:0;
+    width:50%;
+    height:100%;
+    overflow: auto;
+    background-color:red;
+}

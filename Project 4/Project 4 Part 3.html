@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+        var app = angular.module("myApp", []);
+        app.controller("schedule", function($scope) {
+        $scope.classes=[{
+        "lecture" : "Data Structures: CSC-270",
+        "time": "M,W,F 1-1:50pm",
+        }, {
+            "lecture": "Web Development: CSC-360-05",
+        "time": "M,W,F 2-2:50pm",
+        },{
+            "lecture": "Comp Organization: CSC-320",
+        "time": "M 4-6:45pm",
+        },{
+            "lecture": "Java Messaging Service: CSC-360-05",
+        "time": "T, Th 12:30-1:45pm",
+        },{
+            "lecture": "Labor Economics: ECO-330",
+        "time": "T,Th 2-3:15pm",
+        }
+        ]})
+        
+        
+        </script>
+<body>
+<body ng-app="myApp">
+    <h1> Lets Hope This Works</h1>
+    <table ng-controller="schedule" border="2">
+        <tr>
+            <td> Class</td>
+            <td> Time</td>
+        </tr>
+        <tr ng-repeat="classes in classes">
+            <td>{{classes.lecture}}</td>
+            <td>{{classes.time}}</td>
+            
+        </tr>
+    </table>
+
+</body>
+
+
+</body>
+
+</html>
